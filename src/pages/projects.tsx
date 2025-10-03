@@ -76,42 +76,43 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
-      image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
+        title: "Sales Tracker",
+        description: "A secure, real-time web application for tracking and visualizing sales performance. Features interactive dashboards with realtime updates, Supabase-powered authentication, and robust database security with Row Level Security (RLS) policies to ensure data privacy and controlled access.",
+        image: "/placeholder.svg",
+        technologies: ["React", "Recharts", "Supabase (Auth & RLS)", "CSS3"], 
+        liveUrl: "https://sales-tracker-demo.com",
+        githubUrl: "https://github.com/username/sales-tracker"
     },
     {
-      title: "AI Task Manager",
-      description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
+        title: "CastGPT - AI Podcast Recommendation System",
+        description:
+            "An AI-powered podcast recommendation system that leverages natural language processing, vector embeddings, and conversational AI to deliver personalized podcast suggestions. Built with Ollama, Supabase, and LangChain, the app supports semantic search, conversational memory, and real-time recommendations through a modern web interface.",
+        image: "/placeholder.svg",
+        technologies: [
+            "Vanilla JavaScript (ES6+)",
+            "Supabase (PostgreSQL + Vector)",
+            "Ollama (nomic-embed-text, llama3.1:8b)",
+            "CSS3"
+        ],
+        liveUrl: "https://castgpt-demo.com",
+        githubUrl: "https://github.com/username/castgpt"
     },
     {
-      title: "Real-time Chat Application",
-      description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
-    },
-    {
-      title: "AI Image Generator",
-      description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
-    },
-  ];
+        title: "MatchyMatch - Memory Card Game",
+        description:
+            "A responsive memory card matching game that showcases strong problem-solving through efficient game logic, state management, and interactive UI design. Emphasizes software quality with a comprehensive testing suite using Vitest and React Testing Library, ensuring reliability, performance, and maintainability across devices.",
+        image: "/placeholder.svg",
+        technologies: [
+            "React 19",
+            "CSS3 (Grid & Transforms)",
+            "React Confetti",
+            "Vitest",
+            "React Testing Library"
+        ],
+        liveUrl: "https://matchymatch-demo.com",
+        githubUrl: "https://github.com/username/matchymatch"
+    }
+  ]
 
   return (
     <section id="projects" className="relative py-20 px-6">
