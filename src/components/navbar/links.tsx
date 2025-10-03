@@ -6,7 +6,6 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import type { NavigationMenuProps } from "@radix-ui/react-navigation-menu";
-import { Link } from "react-router-dom";
 
 const links = ({ className, ...props }: NavigationMenuProps) => (
   <NavigationMenu
@@ -16,17 +15,17 @@ const links = ({ className, ...props }: NavigationMenuProps) => (
     <NavigationMenuList className="gap-1 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link to="#about">About</Link>
+          <a href="#about" className="cursor-pointer">About</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link to="#experience">Experience</Link>
+          <a href="#experience" className="cursor-pointer">Experience</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link to="#projects">Projects</Link>
+          <a href="#projects" className="cursor-pointer">Projects</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>
