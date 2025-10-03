@@ -1,8 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { Download } from "lucide-react";
-import { Github } from "lucide-react";
+import { Download, Github } from "lucide-react";
+import profile from '/profile.jpg'
 
 const About = () => {
   return (
@@ -46,7 +46,7 @@ const ProfileImage = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div className={cn("mt-10 w-48 h-48 md:w-64 md:h-64", className)} {...props}>
     <div className="relative w-full h-full rounded-2xl overflow-hidden bg-accent">
-      <img src="/placeholder.svg" alt="" className="object-cover w-full h-full" />
+      <img src={profile} alt="Profile Picture" className="object-cover w-full h-full" />
     </div>
   </div>
 )
