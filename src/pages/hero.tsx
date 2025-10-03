@@ -31,9 +31,11 @@ const Hero = () => {
           clean code and great design. Let&apos;s create something amazing
           together! 🚀
         </p>
-        <div className="mt-12 flex items-center justify-center gap-4">
+        <div className="mt-12">
           <Button size="lg" className="rounded-full text-base">
-            See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />
+            <a href="#about" className="flex items-center justify-center gap-4">
+              See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />
+            </a>
           </Button>
         </div>
       </div>
