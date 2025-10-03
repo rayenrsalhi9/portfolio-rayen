@@ -54,30 +54,22 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2021 - Present",
+      title: "Software Development Intern",
+      company: "Tunisie Telecom",
+      period: "Jan 2025 - Feb 2025",
       description:
-        "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
+        "Developed a Python & Selenium automation that logs into the company's workflow portal, navigates its modules, extracts the exact data the team leader needs, and outputs a ready-to-use Excel report—eliminating manual data pulls and giving the service-management team instant, accurate insights.",
+      technologies: ["Selenium WebDriver", "Python", "Microsoft Excel"],
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Inc",
-      period: "2019 - 2021",
+      title: "Customer Service Intern",
+      company: "Tunisie Telecom",
+      period: "Jan 2024 - Feb 2024",
       description:
-        "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-      technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
-    },
-    {
-      title: "Frontend Developer",
-      company: "WebTech Studios",
-      period: "2018 - 2019",
-      description:
-        "Created responsive and interactive user interfaces, collaborated with designers, and optimized application performance.",
-      technologies: ["React", "JavaScript", "SASS", "Webpack", "Jest"],
-    },
-  ];
+        "Delivered high-quality customer support, diagnosed several technical issues, and fostered strong client relationships. Handled daily client-facing tasks including bill payments, statement printing, and financial transactions.",
+      technologies: ["Customer Service", "Technical Support", "Communication"],
+    }
+  ]
 
   return (
     <section id="experience" className="relative py-20 px-6">
