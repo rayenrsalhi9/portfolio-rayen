@@ -25,8 +25,14 @@ const About = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
               <Button className="rounded-full">
-                <Github />
-                View Github
+                <a 
+                  href="https://github.com/rayenrsalhi9" 
+                  target="_blank"
+                  className="flex items-center gap-2"
+                >
+                  <Github />
+                  View Github
+                </a>
               </Button>
               <Button variant="outline" className="rounded-full">
                 <Download />
@@ -46,7 +52,7 @@ const ProfileImage = ({
 }: React.HTMLAttributes<HTMLDivElement>) => (
   <div className={cn("mt-10 w-48 h-48 md:w-64 md:h-64", className)} {...props}>
     <div className="relative w-full h-full rounded-2xl overflow-hidden bg-accent">
-      <img src={profile} alt="Profile Picture" className="object-cover w-full h-full" />
+      <img src={profile} alt="Profile Picture" className="object-cover object-center w-full h-full" />
     </div>
   </div>
 )
