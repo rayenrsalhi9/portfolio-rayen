@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/navbar"
 import Hero from "./pages/hero"
 import About from "./pages/about"
+import Experience from "./pages/experience"
 
 const App = () => {
   return(
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Experience />
     </section>
   )
 }
