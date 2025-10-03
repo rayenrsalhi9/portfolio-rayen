@@ -16,17 +16,21 @@ const Navbar = () => {
         <div className="flex items-center gap-2">
           <Button
             variant="outline"
-            className="hidden sm:inline-flex rounded-full shadow-none"
+            className="rounded-full shadow-none"
             size="icon"
           >
-            <Linkedin className="h-5! w-5!" />
+            <a href="https://www.linkedin.com/in/rayen-salhi/" target="_blank">
+              <Linkedin className="h-5! w-5!" />
+            </a>
           </Button>
           <Button
             variant="outline"
             className="rounded-full shadow-none"
             size="icon"
           >
-            <Github className="h-5! w-5!" />
+            <a href="https://github.com/rayenrsalhi9" target="_blank">
+              <Github className="h-5! w-5!" />
+            </a>
           </Button>
 
           {/* Mobile Menu */}
