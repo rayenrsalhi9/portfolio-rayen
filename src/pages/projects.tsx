@@ -88,7 +88,7 @@ const Projects = () => {
             "An AI-powered podcast recommendation system that leverages natural language processing, vector embeddings, and conversational AI to deliver personalized podcast suggestions. Built with Ollama, Supabase, and LangChain, the app supports semantic search, conversational memory, and real-time recommendations through a modern web interface.",
         image: "/placeholder.svg",
         technologies: [
-            "Vanilla JavaScript (ES6+)",
+            "JavaScript (ES6+)",
             "Supabase (PostgreSQL + Vector)",
             "Ollama (nomic-embed-text, llama3.1:8b)",
             "CSS3"
@@ -110,6 +110,33 @@ const Projects = () => {
         ],
         liveUrl: "https://matchymatch-demo.com",
         githubUrl: "https://github.com/username/matchymatch"
+    },
+    {
+      title: "Quizzly - Interactive Quiz Application",
+      description:
+        "An interactive quiz app built with React and Vite that fetches trivia questions from the Open Trivia Database API. Highlights problem-solving and state management skills through dynamic question handling, answer validation, and real-time scoring, with a strong focus on accessibility and responsive design.",
+      image: "/placeholder.svg",
+      technologies: [
+        "React 19",
+        "CSS3",
+        "API",
+        "clsx"
+      ],
+      liveUrl: "https://quizzly-demo.com",
+      githubUrl: "https://github.com/username/quizzly"
+    },
+    {
+      title: "Assembly: Endgame - Word Guess Game",
+      description:
+        "A modern, accessible word guessing game built with React and TypeScript. Players guess words to prevent Assembly language from taking over, featuring problem-solving challenges, state management, and testing-focused development. Highlights include interactive gameplay, dynamic feedback, accessibility-first design, and responsive UI.",
+      image: "/placeholder.svg",
+      technologies: [
+        "React 19",
+        "TypeScript",
+        "CSS3"
+      ],
+      liveUrl: "https://assembly-endgame-demo.com",
+      githubUrl: "https://github.com/username/assembly-endgame"
     }
   ]
 
