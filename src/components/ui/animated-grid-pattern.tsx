@@ -1,11 +1,5 @@
-import {
-  ComponentPropsWithoutRef,
-  useCallback,
-  useEffect,
-  useId,
-  useRef,
-  useState,
-} from "react"
+import { useCallback, useEffect, useId, useRef, useState } from "react"
+import type { ComponentPropsWithoutRef } from "react"
 import { motion } from "motion/react"
 
 import { cn } from "@/lib/utils"
@@ -38,7 +32,7 @@ export function AnimatedGridPattern({
   const id = useId()
   const containerRef = useRef(null)
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 })
-  const [squares, setSquares] = useState([])
+  const [squares, setSquares] = useState<{ id: number; pos: number[] }[]>([])
 
   const getPos = useCallback(() => {
     return [
