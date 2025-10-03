@@ -1,5 +1,4 @@
 import { Separator } from "@/components/ui/separator";
-import {Link} from "react-router-dom"
 import { Github, Linkedin, Facebook, Instagram  } from "lucide-react";
 
 const footerLinks = [
@@ -44,12 +43,12 @@ const Footer = () => {
           <ul className="mt-6 flex items-center gap-4 flex-wrap">
             {footerLinks.map(({ title, href }) => (
               <li key={title}>
-                <Link
-                  to={href}
+                <a
+                  href={href}
                   className="text-muted-foreground hover:text-foreground"
                 >
                   {title}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -62,18 +61,18 @@ const Footer = () => {
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
-            <Link to="#" target="_blank">
+            <a href="#" target="_blank">
               <Github className="h-5 w-5" />
-            </Link>
-            <Link to="#" target="_blank">
+            </a>
+            <a href="#" target="_blank">
               <Linkedin className="h-5 w-5" />
-            </Link>
-            <Link to="#" target="_blank">
+            </a>
+            <a href="#" target="_blank">
               <Facebook className="h-5 w-5" />
-            </Link>
-            <Link to="#" target="_blank">
+            </a>
+            <a href="#" target="_blank">
               <Instagram className="h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
