@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
-import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   title: string;
@@ -49,10 +48,10 @@ const ProjectCard = ({
         <div className="flex gap-3 mt-auto">
           {liveUrl && (
             <Button variant="default" className="rounded-full" asChild>
-              <Link to={liveUrl} target="_blank" rel="noopener noreferrer">
+              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-1 h-4 w-4" />
                 Live Demo
-              </Link>
+              </a>
             </Button>
           )}
           {githubUrl && (
@@ -61,10 +60,10 @@ const ProjectCard = ({
               className="rounded-full shadow-none"
               asChild
             >
-              <Link to={githubUrl} target="_blank" rel="noopener noreferrer">
+              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <Github className="mr-1 h-4 w-4" />
                 View Code
-              </Link>
+              </a>
             </Button>
           )}
         </div>
