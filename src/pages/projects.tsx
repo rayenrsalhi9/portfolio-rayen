@@ -137,6 +137,21 @@ const Projects = () => {
       ],
       liveUrl: "https://assembly-endgame-demo.com",
       githubUrl: "https://github.com/username/assembly-endgame"
+    },{
+      title: "VanLife",
+      description:
+        "VanLife is a full-stack van rental platform built with React and Vite. It mocks the travelers process of browsing and booking camper vans while providing hosts tools to manage their fleet and track earnings. The project highlights problem-solving, state management, routing, authentication, and cloud database integration with Firebase Firestore.",
+      image: "/placeholder.svg",
+      technologies: [
+        "React 19",
+        "React Router DOM 6",
+        "Firebase Firestore",
+        "MirageJS",
+        "CSS3",
+        "React Icons"
+      ],
+      liveUrl: "https://vanlife-demo.com",
+      githubUrl: "https://github.com/username/vanlife"
     }
   ]
 
