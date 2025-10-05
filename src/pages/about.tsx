@@ -20,8 +20,8 @@ const About = () => {
             <h2 className="text-4xl font-bold mb-4 tracking-tight">
               Passionate about creating impactful web applications
             </h2>
-            <p className="text-muted-foreground mb-6 text-justify leading-7">
-              I'm a final-year software development student starting my internship in January 2026. After a full-stack bootcamp at Scrimba and several solo projects, I now build modern web apps with React, Express JS, PostgreSQL, and BaaS platforms like Firebase and Supabase. I love crafting user-friendly solutions and growing through new challenges.
+            <p className="text-muted-foreground mb-6 leading-6">
+              I'm a final-year software development student at the University of Sfax, with a strong passion for creating impactful web applications. My journey in the tech industry has been both exciting and enriching, with a focus on building modern, user-centric solutions.
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
               <Button className="rounded-full">
