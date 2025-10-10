@@ -8,6 +8,7 @@ import Experience from "./pages/experience"
 import Projects from "./pages/projects"
 import Footer from "./components/footer"
 import ThemeToggle from "./components/theme-toggle"
+import Project from "./pages/project"
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       </section>
     ),
   },
+  {
+    path: '/projects/:projectId',
+    element: <Project />
+  }
 ]);
 
 
