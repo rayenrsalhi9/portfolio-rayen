@@ -1,6 +1,6 @@
 import { projects } from "@/utils/projects";
-import { Badge } from "@/components/ui/badge";
 import ProjectCard from "@/components/project-card";
+import { Badge } from "@/components/ui/badge";
 
 const Projects = () => {
   return (
@@ -19,8 +19,8 @@ const Projects = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
+          {projects.map(project => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>
