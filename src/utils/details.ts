@@ -104,11 +104,11 @@ export const projectDetails = [
       githubUrl: "..."
     },
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/castgpt/cast-gpt.png",
+      "/castgpt/cast-gpt-2.png",
+      "/castgpt/cast-gpt-3.png",
+      "/castgpt/mobile-conv.png",
+      "/castgpt/mobile-empty.png",
     ]
   },
   {

@@ -64,36 +64,8 @@ const Project = () => {
         <p className="text-lg text-muted-foreground leading-relaxed mb-8">
           {project.overview}
         </p>
-        
-        {/* Image Carousel */}
-        {project.images && project.images.length > 0 && (
-          <div className="mb-8">
-            <Carousel className="w-full max-w-4xl mx-auto">
-              <CarouselContent>
-                {project.images.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div className="p-1">
-                      <Card>
-                        <CardContent className="flex aspect-video items-center justify-center p-0">
-                          <img
-                            src={image}
-                            alt={`${project.title} screenshot ${index + 1}`}
-                            className="w-full h-full max-h-[200px] object-cover rounded-lg"
-                          />
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div>
-        )}
-      </div>
 
-      {/* Project Links */}
+        {/* Project Links */}
       <div className="flex flex-wrap gap-4 mb-12">
         {project.links.liveUrl && (
           <Button asChild>
@@ -110,6 +82,34 @@ const Project = () => {
               View Code
             </a>
           </Button>
+        )}
+      </div>
+        
+        {/* Image Carousel */}
+        {project.images && project.images.length > 0 && (
+          <div className="mb-8">
+            <Carousel className="w-full max-w-2xl mx-auto">
+              <CarouselContent>
+                {project.images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div>
+                      <Card>
+                        <CardContent className="flex aspect-[16/10] items-center justify-center p-0 h-80">
+                          <img
+                            src={image}
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-full object-contain rounded-lg"
+                          />
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
         )}
       </div>
 
