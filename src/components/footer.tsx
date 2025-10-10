@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Facebook, Instagram  } from "lucide-react";
 import Logo from "./navbar/logo";
@@ -5,15 +6,15 @@ import Logo from "./navbar/logo";
 const footerLinks = [
   {
     title: "About",
-    href: "#about",
+    to: "#about",
   },
   {
     title: "Experience",
-    href: "#experience",
+    to: "#experience",
   },
   {
     title: "Projects",
-    href: "#projects",
+    to: "#projects",
   },
 ];
 
@@ -26,14 +27,14 @@ const Footer = () => {
           <Logo />
 
           <ul className="mt-6 flex items-center gap-4 flex-wrap">
-            {footerLinks.map(({ title, href }) => (
+            {footerLinks.map(({ title, to }) => (
               <li key={title}>
-                <a
-                  href={href}
+                <Link
+                  to={to}
                   className="text-muted-foreground hover:text-foreground"
                 >
                   {title}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

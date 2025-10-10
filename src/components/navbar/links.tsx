@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -15,17 +16,17 @@ const links = ({ className, ...props }: NavigationMenuProps) => (
     <NavigationMenuList className="gap-1 space-x-0 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <a href="#about" className="cursor-pointer">About</a>
+          <Link to="#about">About</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <a href="#experience" className="cursor-pointer">Experience</a>
+          <Link to="#experience">Experience</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <a href="#projects" className="cursor-pointer">Projects</a>
+          <Link to="#projects">Projects</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
     </NavigationMenuList>
