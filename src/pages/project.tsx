@@ -3,6 +3,14 @@ import { useEffect } from "react";
 import { projectDetails } from "@/utils/details";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 
 const Project = () => {
@@ -53,9 +61,36 @@ const Project = () => {
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
           {project.title}
         </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed">
+        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
           {project.overview}
         </p>
+        
+        {/* Image Carousel */}
+        {project.images && project.images.length > 0 && (
+          <div className="mb-8">
+            <Carousel className="w-full max-w-4xl mx-auto">
+              <CarouselContent>
+                {project.images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="p-1">
+                      <Card>
+                        <CardContent className="flex aspect-video items-center justify-center p-0">
+                          <img
+                            src={image}
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-full max-h-[200px] object-cover rounded-lg"
+                          />
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        )}
       </div>
 
       {/* Project Links */}

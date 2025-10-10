@@ -44,7 +44,12 @@ export const projectDetails = [
     links: {
       liveUrl: "...",
       githubUrl: "..."
-    }
+    },
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
   },
   {
     id: "castgpt",
@@ -97,7 +102,14 @@ export const projectDetails = [
     links: {
       liveUrl: "",
       githubUrl: "..."
-    }
+    },
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
   },
   {
     id: "matchymatch",
@@ -140,7 +152,11 @@ export const projectDetails = [
     links: {
       liveUrl: "",
       githubUrl: ""
-    }
+    },
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
   },
   {
     id: "quizzly",
@@ -178,7 +194,13 @@ export const projectDetails = [
     links: {
       liveUrl: "...",
       githubUrl: "..."
-    }
+    },
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
   },
   {
     id: "assembly-endgame",
@@ -219,6 +241,11 @@ export const projectDetails = [
     links: {
       liveUrl: "",
       githubUrl: ""
-    }
+    },
+    images: [
+      "/placeholder.svg",
+      "/placeholder.svg",
+      "/placeholder.svg"
+    ]
   }
 ]
