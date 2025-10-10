@@ -84,18 +84,22 @@ const Projects = () => {
         githubUrl: "https://github.com/rayenrsalhi9/supabase-app"
     },
     {
-        title: "CastGPT - AI Podcast Recommendation System",
-        description:
-            "An AI-powered podcast recommendation system that leverages natural language processing, vector embeddings, and conversational AI to deliver personalized podcast suggestions. Built with Ollama, Supabase, and LangChain, the app supports semantic search, conversational memory, and real-time recommendations through a modern web interface.",
-        image: "/placeholder.svg",
-        technologies: [
-            "JavaScript (ES6+)",
-            "Supabase (PostgreSQL + Vector)",
-            "Ollama (nomic-embed-text, llama3.1:8b)",
-            "CSS3"
-        ],
-        liveUrl: "",
-        githubUrl: ""
+      title: "CastGPT - AI Podcast Recommender",
+      description: "CastGPT is an AI-powered podcast recommendation chatbot built with React and TypeScript. It combines OpenAI’s GPT for natural conversations with Supabase pgvector for semantic search. The project emphasizes secure database integration, vector embeddings, and problem-solving in AI-driven recommendation systems.",
+      image: "/cast-gpt.png",
+      technologies: [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "OpenAI API",
+        "Supabase pgvector",
+        "Ollama",
+        "LangChain.js"
+      ],
+      liveUrl: "",
+      githubUrl: "https://github.com/rayenrsalhi9/cast-gpt"
     },
     {
         title: "MatchyMatch - Memory Card Game",
