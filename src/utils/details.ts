@@ -1,5 +1,6 @@
 export const projectDetails = [
   {
+    id: "sales-tracker",
     title: "Sales Tracker",
     overview:
       "Sales Tracker is a secure, real-time web application for monitoring sales performance and analytics. It features live dashboards that automatically update as new data is added, helping teams stay informed and make data-driven decisions. The app prioritizes security and access control, leveraging Supabase’s authentication and Row Level Security (RLS) to ensure each user only accesses their own data.",
@@ -46,6 +47,7 @@ export const projectDetails = [
     }
   },
   {
+    id: "castgpt",
     title: "CastGPT - AI Podcast Recommender",
     overview:
       "CastGPT is an AI-powered chatbot that helps users discover podcasts through natural language conversations. By combining OpenAI’s GPT model with Supabase pgvector and local embedding generation using Ollama, it delivers personalized, intelligent recommendations that feel human and conversational.",
@@ -98,6 +100,7 @@ export const projectDetails = [
     }
   },
   {
+    id: "matchymatch",
     title: "MatchyMatch - Memory Card Game",
     overview:
       "MatchyMatch is a responsive memory card game designed to test and improve focus, memory, and pattern recognition. Built with React, it uses efficient state management to track matched pairs and smooth animations for a fun experience. A comprehensive test suite ensures performance and reliability.",
@@ -140,6 +143,7 @@ export const projectDetails = [
     }
   },
   {
+    id: "quizzly",
     title: "Quizzly - Interactive Quiz Application",
     overview:
       "Quizzly is an interactive quiz application that delivers trivia questions dynamically from the Open Trivia Database API. It provides real-time scoring, feedback on answers, and accessibility features to ensure a smooth experience for all users.",
@@ -177,6 +181,7 @@ export const projectDetails = [
     }
   },
   {
+    id: "assembly-endgame",
     title: "Assembly: Endgame - Word Guess Game",
     overview:
       "Assembly: Endgame is a modern word guessing game with a programming theme. Players must guess words correctly within limited attempts to stop Assembly from taking over the programming world. Built with React and TypeScript, the game emphasizes accessibility, responsive design, and modular architecture.",
