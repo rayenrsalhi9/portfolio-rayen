@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import { projectDetails } from "@/utils/details";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,6 +7,11 @@ import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 
 const Project = () => {
   const { projectId } = useParams<{ projectId: string }>();
+  
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
   
   // Find the project by matching the ID from URL parameters
   const project = projectDetails.find(p => p.id === projectId);
