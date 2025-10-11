@@ -154,8 +154,7 @@ export const projectDetails = [
       githubUrl: ""
     },
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/matchy-match.png"
     ]
   },
   {
@@ -196,10 +195,7 @@ export const projectDetails = [
       githubUrl: "..."
     },
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "quizzly.png"
     ]
   },
   {
@@ -243,9 +239,7 @@ export const projectDetails = [
       githubUrl: ""
     },
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/assembly-endgame.png"
     ]
   }
 ]
