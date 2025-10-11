@@ -42,10 +42,10 @@ const Project = () => {
   }
 
   return (
-    <section className="w-full max-w-4xl my-0 mx-auto px-6 py-20">
+    <section className="w-full max-w-5xl my-0 mx-auto px-6 py-20">
       {/* Back Navigation */}
       <div className="mb-8">
-        <Button variant="ghost" asChild className="mb-4">
+        <Button variant="ghost" asChild className="mb-4 hover:bg-accent/50 transition-colors">
           <Link to="/">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Back to Projects
@@ -54,71 +54,98 @@ const Project = () => {
       </div>
 
       {/* Project Header */}
-      <div className="mb-12">
-        <Badge variant="secondary" className="mb-4">
+      <div className="mb-16">
+        <Badge variant="secondary" className="mb-6 text-sm font-medium px-4 py-1.5">
           Project Details
         </Badge>
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-6 bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
           {project.title}
         </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-          {project.overview}
-        </p>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            {project.overview}
+          </p>
+        </div>
 
         {/* Project Links */}
-      <div className="flex flex-wrap gap-4 mb-12">
-        {project.links.liveUrl && (
-          <Button asChild>
-            <a href={project.links.liveUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="mr-2 h-4 w-4" />
-              Live Demo
-            </a>
-          </Button>
-        )}
-        {project.links.githubUrl && (
-          <Button variant="outline" asChild>
-            <a href={project.links.githubUrl} target="_blank" rel="noopener noreferrer">
-              <Github className="mr-2 h-4 w-4" />
-              View Code
-            </a>
-          </Button>
-        )}
-      </div>
+        <div className="flex flex-wrap gap-4 mb-16">
+          {project.links.liveUrl && (
+            <Button asChild className="group">
+              <a href={project.links.liveUrl} target="_blank" rel="noopener noreferrer">
+                <ExternalLink className="mr-2 h-4 w-4 group-hover:rotate-45 transition-transform" />
+                Live Demo
+              </a>
+            </Button>
+          )}
+          {project.links.githubUrl && (
+            <Button variant="outline" asChild className="group">
+              <a href={project.links.githubUrl} target="_blank" rel="noopener noreferrer">
+                <Github className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+                View Code
+              </a>
+            </Button>
+          )}
+        </div>
         
         {/* Image Carousel */}
         {project.images && project.images.length > 0 && (
-          <div className="mb-8">
-            <Carousel className="w-full max-w-2xl mx-auto">
-              <CarouselContent>
-                {project.images.map((image, index) => (
-                  <CarouselItem key={index}>
-                    <div>
-                      <Card>
-                        <CardContent className="flex aspect-[16/10] items-center justify-center p-0 h-80">
-                          <img
-                            src={image}
-                            alt={`${project.title} screenshot ${index + 1}`}
-                            className="w-full h-full object-contain rounded-lg"
-                          />
-                        </CardContent>
-                      </Card>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
+          <div className="mb-16">
+            <div className="relative">
+              <Carousel className="w-full max-w-3xl mx-auto">
+                <CarouselContent>
+                  {project.images.map((image, index) => (
+                    <CarouselItem key={index}>
+                      <div className="relative">
+                        <Card className="overflow-hidden border-2 border-border/20 hover:border-border/40 transition-colors">
+                          <CardContent className="flex aspect-[16/10] items-center justify-center p-0 h-96 bg-gradient-to-br from-muted/50 to-background">
+                            <img
+                              src={image}
+                              alt={`${project.title} screenshot ${index + 1}`}
+                              className="w-full h-full object-contain rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                              loading="lazy"
+                            />
+                          </CardContent>
+                        </Card>
+                        {project.images.length > 1 && (
+                          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                            <div className="flex space-x-2">
+                              {project.images.map((_, i) => (
+                                <div
+                                  key={i}
+                                  className={`w-2 h-2 rounded-full transition-colors ${
+                                    i === index ? 'bg-primary' : 'bg-primary/30'
+                                  }`}
+                                />
+                              ))}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                {project.images.length > 1 && (
+                  <>
+                    <CarouselPrevious className="left-4" />
+                    <CarouselNext className="right-4" />
+                  </>
+                )}
+              </Carousel>
+            </div>
           </div>
         )}
       </div>
 
       {/* Technologies */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-        <div className="flex flex-wrap gap-2">
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Technologies Used</h2>
+        <div className="flex flex-wrap gap-3">
           {project.technologies.map((tech: string) => (
-            <Badge key={tech} variant="secondary" className="rounded-full">
+            <Badge 
+              key={tech} 
+              variant="secondary" 
+              className="rounded-full px-4 py-1.5 text-sm font-medium hover:bg-secondary/80 transition-colors"
+            >
               {tech}
             </Badge>
           ))}
@@ -126,79 +153,88 @@ const Project = () => {
       </div>
 
       {/* Objectives */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Objectives</h2>
-        <ul className="space-y-2">
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Objectives</h2>
+        <div className="space-y-4">
           {project.objectives.map((objective: string, index: number) => (
-            <li key={index} className="flex items-start">
-              <span className="text-primary mr-2 mt-1">•</span>
-              <span className="text-muted-foreground">{objective}</span>
-            </li>
+            <div key={index} className="flex items-start group">
+              <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-0.5">
+                <span className="text-primary text-sm font-semibold">{index + 1}</span>
+              </div>
+              <p className="text-muted-foreground leading-relaxed">{objective}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* Key Features */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
-        <ul className="space-y-3">
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Key Features</h2>
+        <div className="grid gap-4">
           {project.keyFeatures.map((feature: string, index: number) => (
-            <li key={index} className="flex items-start">
-              <span className="text-primary mr-3 mt-1">{feature.split(' ')[0]}</span>
-              <span className="text-muted-foreground">{feature.substring(feature.indexOf(' ') + 1)}</span>
-            </li>
+            <div key={index} className="flex items-start p-4 rounded-lg border border-border/50 hover:border-border/80 transition-colors group">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-primary mr-4 mt-2"></div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-foreground mb-1">{feature.split(' ')[0].replace('–', '').trim()}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{feature.substring(feature.indexOf('–') + 1).trim()}</p>
+              </div>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* Architecture */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Architecture</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          {project.architecture}
-        </p>
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Architecture</h2>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-muted-foreground leading-relaxed bg-muted/30 p-6 rounded-lg border border-border/50">
+            {project.architecture}
+          </p>
+        </div>
       </div>
 
       {/* Setup Instructions */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Setup Instructions</h2>
-        <ol className="space-y-2">
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Setup Instructions</h2>
+        <div className="space-y-4">
           {project.setup.map((step: string, index: number) => (
-            <li key={index} className="flex items-start">
-              <span className="text-primary font-semibold mr-3">{index + 1}.</span>
-              <span className="text-muted-foreground">{step}</span>
-            </li>
+            <div key={index} className="flex items-start group">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center mr-4 font-semibold text-primary">
+                {index + 1}
+              </div>
+              <p className="text-muted-foreground leading-relaxed flex-1 pt-1">{step}</p>
+            </div>
           ))}
-        </ol>
+        </div>
       </div>
 
       {/* Usage */}
-      <div className="mb-12">
-        <h2 className="text-2xl font-semibold mb-4">Usage</h2>
-        <ul className="space-y-2">
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-foreground">Usage</h2>
+        <div className="grid gap-3">
           {project.usage.map((use: string, index: number) => (
-            <li key={index} className="flex items-start">
-              <span className="text-primary mr-2 mt-1">•</span>
-              <span className="text-muted-foreground">{use}</span>
-            </li>
+            <div key={index} className="flex items-start p-3 rounded-lg hover:bg-accent/30 transition-colors">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-primary mr-4 mt-2"></div>
+              <p className="text-muted-foreground leading-relaxed">{use}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </div>
 
       {/* Security/Testing */}
       {(project.security || project.testing) && (
-        <div className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold mb-6 text-foreground">
             {project.security ? 'Security' : 'Testing'}
           </h2>
-          <ul className="space-y-2">
+          <div className="grid gap-3">
             {(project.security || project.testing)?.map((item: string, index: number) => (
-              <li key={index} className="flex items-start">
-                <span className="text-primary mr-2 mt-1">•</span>
-                <span className="text-muted-foreground">{item}</span>
-              </li>
+              <div key={index} className="flex items-start p-3 rounded-lg hover:bg-accent/30 transition-colors">
+                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-primary mr-4 mt-2"></div>
+                <p className="text-muted-foreground leading-relaxed">{item}</p>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </section>

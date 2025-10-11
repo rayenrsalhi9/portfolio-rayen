@@ -11,11 +11,11 @@ export const projectDetails = [
       "Offer a visually engaging experience through charts and analytics."
     ],
     keyFeatures: [
-      "🔐 **Email/Password Authentication** – Users can securely sign up, log in, and access personalized sales data.",
-      "📊 **Realtime Analytics** – Sales performance data updates instantly without page reloads.",
-      "🧩 **Interactive Charts** – Built with Recharts for a clear visual overview of sales trends.",
-      "🛡️ **Database Security with RLS** – Enforced access policies ensure that each user’s data remains private.",
-      "⚙️ **Responsive UI** – Works seamlessly across desktops, tablets, and mobile devices."
+      "Email/Password Authentication – Users can securely sign up, log in, and access personalized sales data.",
+      "Realtime Analytics – Sales performance data updates instantly without page reloads.",
+      "Interactive Charts – Built with Recharts for a clear visual overview of sales trends.",
+      "Database Security with RLS – Enforced access policies ensure that each user’s data remains private.",
+      "Responsive UI – Works seamlessly across desktops, tablets, and mobile devices."
     ],
     technologies: [
       "React 19",
@@ -42,8 +42,8 @@ export const projectDetails = [
       "Session tokens and environment variables are properly managed."
     ],
     links: {
-      liveUrl: "...",
-      githubUrl: "..."
+      liveUrl: "https://supabase-sales.netlify.app/",
+      githubUrl: "https://github.com/rayenrsalhi9/supabase-app"
     },
     images: [
       "/placeholder.svg",
@@ -63,11 +63,11 @@ export const projectDetails = [
       "Leverage AI responsibly through secured API connections."
     ],
     keyFeatures: [
-      "💬 **AI Chat Interface** – Conversational interface powered by OpenAI GPT models.",
-      "🎧 **Smart Podcast Recommendations** – Uses vector similarity to find semantically related episodes.",
-      "⚡ **Local Embedding Generation** – Generates embeddings using Ollama and BAAI/bge-m3.",
-      "📡 **Supabase + pgvector Integration** – Efficient vector search and storage.",
-      "🎨 **Modern UI** – Responsive and elegant interface built with Tailwind CSS and shadcn/ui."
+      "AI Chat Interface - Conversational interface powered by OpenAI GPT models.",
+      "Smart Podcast Recommendations - Uses vector similarity to find semantically related episodes.",
+      "Local Embedding Generation - Generates embeddings using Ollama and BAAI/bge-m3.",
+      "Supabase + pgvector Integration - Efficient vector search and storage.",
+      "Modern UI - Responsive and elegant interface built with Tailwind CSS and shadcn/ui."
     ],
     technologies: [
       "React 19",
@@ -101,7 +101,7 @@ export const projectDetails = [
     ],
     links: {
       liveUrl: "",
-      githubUrl: "..."
+      githubUrl: "https://github.com/rayenrsalhi9/cast-gpt"
     },
     images: [
       "/castgpt/cast-gpt.png",
@@ -122,11 +122,11 @@ export const projectDetails = [
       "Ensure code reliability through automated testing."
     ],
     keyFeatures: [
-      "🎮 **Interactive Gameplay** – Flip and match cards with smooth transitions.",
-      "💡 **Dynamic State Management** – Efficient React state logic for real-time updates.",
-      "📱 **Responsive Design** – Works perfectly on all devices.",
-      "🎉 **Victory Animation** – Confetti effect on game completion.",
-      "🧪 **Testing Suite** – Includes Vitest and React Testing Library for component-level testing."
+      "Interactive Gameplay - Flip and match cards with smooth transitions.",
+      "Dynamic State Management - Efficient React state logic for real-time updates.",
+      "Responsive Design - Works perfectly on all devices.",
+      "Victory Animation - Confetti effect on game completion.",
+      "Testing Suite - Includes Vitest and React Testing Library for component-level testing."
     ],
     technologies: [
       "React 19",
@@ -150,8 +150,8 @@ export const projectDetails = [
       "Unit and integration tests validate core logic and user interactions."
     ],
     links: {
-      liveUrl: "",
-      githubUrl: ""
+      liveUrl: "https://matchee.netlify.app/",
+      githubUrl: "https://github.com/rayenrsalhi9/matchy"
     },
     images: [
       "/matchy-match.png"
@@ -168,11 +168,11 @@ export const projectDetails = [
       "Ensure a responsive and accessible UI for all device types."
     ],
     keyFeatures: [
-      "🧠 **Dynamic Question Fetching** – Retrieves questions from an external API in real time.",
-      "⚡ **Instant Feedback** – Provides immediate visual responses to selected answers.",
-      "📊 **Score Tracking** – Tracks and displays real-time user progress.",
-      "📱 **Responsive Layout** – Fully optimized for mobile and desktop.",
-      "♿ **Accessible Design** – Keyboard navigation and ARIA support."
+      "Dynamic Question Fetching - Retrieves questions from an external API in real time.",
+      "Instant Feedback - Provides immediate visual responses to selected answers.",
+      "Score Tracking - Tracks and displays real-time user progress.",
+      "Responsive Layout - Fully optimized for mobile and desktop.",
+      "Accessible Design - Keyboard navigation and ARIA support."
     ],
     technologies: [
       "React 19",
@@ -191,8 +191,8 @@ export const projectDetails = [
       "Enjoy fast, dynamic question loading with smooth transitions."
     ],
     links: {
-      liveUrl: "...",
-      githubUrl: "..."
+      liveUrl: "https://quizzlee.netlify.app/",
+      githubUrl: "https://github.com/rayenrsalhi9/quizzly"
     },
     images: [
       "quizzly.png"
@@ -209,11 +209,11 @@ export const projectDetails = [
       "Implement accessibility-first and responsive design principles."
     ],
     keyFeatures: [
-      "🎯 **Word Guessing Mechanics** – Classic hangman-style gameplay with a tech twist.",
-      "💻 **Programming Language Theme** – Languages ‘die’ as wrong guesses accumulate.",
-      "✨ **Dynamic Feedback** – Victory confetti, defeat messages, and visual indicators.",
-      "♿ **Accessibility Support** – Full keyboard navigation and ARIA integration.",
-      "📱 **Responsive UI** – Designed for all screen sizes with adaptive elements."
+      "Word Guessing Mechanics – Classic hangman-style gameplay with a tech twist.",
+      "Programming Language Theme – Languages die as wrong guesses accumulate.",
+      "Dynamic Feedback – Victory confetti, defeat messages, and visual indicators.",
+      "Accessibility Support – Full keyboard navigation and ARIA integration.",
+      "Responsive UI – Designed for all screen sizes with adaptive elements."
     ],
     technologies: [
       "React 19",
@@ -235,8 +235,8 @@ export const projectDetails = [
       "Restart anytime with the New Game button."
     ],
     links: {
-      liveUrl: "",
-      githubUrl: ""
+      liveUrl: "https://word-guess-react.netlify.app/",
+      githubUrl: "https://github.com/rayenrsalhi9/word-guess-ts"
     },
     images: [
       "/assembly-endgame.png"
