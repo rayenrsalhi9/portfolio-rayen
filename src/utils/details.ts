@@ -1,54 +1,68 @@
 export const projectDetails = [
   {
-    id: "sales-tracker",
-    title: "Sales Tracker",
+    id: "projectroom",
+    title: "ProjectRoom",
     overview:
-      "Sales Tracker is a secure, real-time web application for monitoring sales performance and analytics. It features live dashboards that automatically update as new data is added, helping teams stay informed and make data-driven decisions. The app prioritizes security and access control, leveraging Supabase’s authentication and Row Level Security (RLS) to ensure each user only accesses their own data.",
+      "ProjectRoom is a modern AI-powered collaboration platform built to help teams, students, and startups manage projects, assign tasks, and track progress — all in one place. It integrates AI for intelligent task generation, Supabase for real-time collaboration and authentication, and a sleek React + Tailwind UI for a smooth, responsive experience across all devices.",
     objectives: [
-      "Provide an intuitive dashboard for tracking daily, weekly, and monthly sales performance.",
-      "Ensure real-time synchronization between the client and the database.",
-      "Implement secure authentication and fine-grained data access using Supabase RLS.",
-      "Offer a visually engaging experience through charts and analytics."
+      "Create a unified space where teams can manage projects, assign tasks, and monitor progress effortlessly.",
+      "Leverage AI to automatically generate and categorize tasks from project descriptions.",
+      "Enable real-time collaboration with instant updates and notifications.",
+      "Ensure data security and access control using Supabase authentication and RLS policies.",
+      "Deliver a clean, modern UI with responsive design and dark mode support."
     ],
     keyFeatures: [
-      "Email/Password Authentication – Users can securely sign up, log in, and access personalized sales data.",
-      "Realtime Analytics – Sales performance data updates instantly without page reloads.",
-      "Interactive Charts – Built with Recharts for a clear visual overview of sales trends.",
-      "Database Security with RLS – Enforced access policies ensure that each user’s data remains private.",
-      "Responsive UI – Works seamlessly across desktops, tablets, and mobile devices."
+      "AI-Powered Task Generation – Automatically create structured task lists from project descriptions using OpenAI.",
+      "Realtime Collaboration – Stay synchronized with live updates, notifications, and team activity timelines.",
+      "Smart Notifications – Receive instant alerts for new assignments, approaching deadlines, and status changes.",
+      "Task Submission & Review – Members can upload deliverables, and admins can approve or request revisions.",
+      "Visual Analytics – Interactive charts and dashboards to visualize progress and completion rates.",
+      "Role-Based Access Control – Define admin and collaborator roles with appropriate permissions.",
+      "Dark/Light Mode – Seamless theme switching across the entire platform.",
+      "Responsive Design – Fully optimized for desktop, tablet, and mobile use."
     ],
     technologies: [
       "React 19",
+      "TypeScript 5",
+      "Supabase (Auth, Database, Realtime, Storage, RLS)",
+      "OpenAI API",
+      "Tailwind CSS 4",
+      "shadcn/ui",
       "Recharts",
-      "Supabase (Auth, Realtime, RLS)",
-      "CSS3"
+      "Vite"
     ],
     architecture:
-      "The frontend is built with React for dynamic UI and state management. Supabase serves as the backend, handling authentication, real-time database updates, and RLS-based access control. Recharts provides data visualization, while CSS3 ensures a clean, responsive interface.",
+      "The frontend is built with React and TypeScript, styled using Tailwind CSS and shadcn/ui for a consistent and accessible design system. Supabase serves as the backend, handling PostgreSQL database operations, real-time updates, authentication, file storage, and role-based security through Row Level Security (RLS). The OpenAI API powers intelligent task generation, while Recharts delivers interactive visual analytics. The app is built and served via Vite for fast performance.",
     setup: [
-      "Clone the repository and run `npm install` to install dependencies.",
-      "Create a `.env` file with Supabase URL and public anon key.",
+      "Clone the repository and install dependencies using `npm install`.",
+      "Create a `.env` file with Supabase and OpenAI API keys.",
       "Start the development server with `npm run dev`.",
-      "Set up Supabase authentication and configure RLS policies for user-specific data access."
+      "Configure Supabase authentication, RLS policies, and storage for project and task data."
     ],
     usage: [
-      "Sign up or log in using your email and password.",
-      "Add or update your sales entries.",
-      "View real-time performance through interactive charts and summaries."
+      "Sign up or log in with your email and password to access your workspace.",
+      "Create a project or join one using an invite code.",
+      "Use AI-powered task generation to automatically create a task list.",
+      "Assign tasks to team members using drag-and-drop functionality.",
+      "Track project progress through charts and visual analytics.",
+      "Receive notifications for deadlines, updates, and submissions."
     ],
     security: [
-      "Supabase RLS ensures users can only access their own sales records.",
-      "All database interactions are authenticated via secure API keys.",
-      "Session tokens and environment variables are properly managed."
+      "Supabase Row Level Security (RLS) enforces access control to ensure data privacy.",
+      "Authentication handled through Supabase Auth with JWT-based sessions.",
+      "All user inputs sanitized using DOMPurify to prevent XSS attacks.",
+      "Environment variables securely manage API keys and configurations.",
+      "Strict TypeScript mode ensures compile-time safety and validation."
     ],
     links: {
-      liveUrl: "https://supabase-sales.netlify.app/",
-      githubUrl: "https://github.com/rayenrsalhi9/supabase-app"
+      liveUrl: "",
+      githubUrl: "https://github.com/rayenrsalhi9/project-manager"
     },
     images: [
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
+      "/projectroom-preview.png",
+      "/projectroom-dashboard.png",
+      "/projectroom-tasks.png",
+      "/projectroom-analytics.png"
     ]
   },
   {

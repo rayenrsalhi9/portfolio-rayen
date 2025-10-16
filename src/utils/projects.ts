@@ -1,12 +1,12 @@
 export const projects = [
     {
-        id: "sales-tracker",
-        title: "Sales Tracker",
-        description: "A secure, real-time web application for tracking and visualizing sales performance. Features interactive dashboards with realtime updates, Supabase-powered authentication, and robust database security with Row Level Security (RLS) policies to ensure data privacy and controlled access.",
+        id: "projectroom",
+        title: "ProjectRoom",
+        description: "A modern AI-powered collaboration platform built with React and Supabase, designed to help teams, students, and startups plan smarter and work better. Includes intelligent task generation using OpenAI, real-time progress tracking, structured task submission and review workflows, role-based access control, and a beautiful responsive UI with light/dark themes.",
         image: "/placeholder.svg",
-        technologies: ["React", "Recharts", "Supabase (Auth & RLS)", "CSS3"], 
-        liveUrl: "https://supabase-sales.netlify.app/",
-        githubUrl: "https://github.com/rayenrsalhi9/supabase-app"
+        technologies: ["React", "TypeScript", "Supabase", "OpenAI API", "Tailwind CSS", "shadcn/ui", "Recharts"],
+        liveUrl: "https://projectroom-app.vercel.app/",
+        githubUrl: "https://github.com/rayenrsalhi9/projectroom"
     },
     {
       id: "castgpt",
