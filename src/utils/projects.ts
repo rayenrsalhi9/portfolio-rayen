@@ -3,10 +3,10 @@ export const projects = [
         id: "projectroom",
         title: "ProjectRoom",
         description: "A modern AI-powered collaboration platform built with React and Supabase, designed to help teams, students, and startups plan smarter and work better. Includes intelligent task generation using OpenAI, real-time progress tracking, structured task submission and review workflows, role-based access control, and a beautiful responsive UI with light/dark themes.",
-        image: "/placeholder.svg",
+        image: "/projectroom/home-page.png",
         technologies: ["React", "TypeScript", "Supabase", "OpenAI API", "Tailwind CSS", "shadcn/ui", "Recharts"],
-        liveUrl: "https://projectroom-app.vercel.app/",
-        githubUrl: "https://github.com/rayenrsalhi9/projectroom"
+        liveUrl: "",
+        githubUrl: "https://github.com/rayenrsalhi9/project-manager"
     },
     {
       id: "castgpt",
